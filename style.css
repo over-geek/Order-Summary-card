@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+p {
+    font-size: 16px;
+    color: hsl(214, 21%, 59%);
+    font-weight: 600;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.wrapper {
+    margin-top: 4rem;
+    max-width: 380px;
+    max-height: 580px;
+    overflow: hidden;
+    height: 85%;
+    background-color: #fff;
+    border-radius: 11px;
+}
+.wrapper img {
+    border-radius: 11px 11px 0px 0px;
+}
+.description {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.info {
+    text-align: center;
+}
+.info p {
+    margin-top: 1rem;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: row;
+    border-radius: 6px;
+    width: 100%;
+    padding: 6px;
+    margin-top: 1.8rem;
+    background-color: hsl(231, 54%, 97%);
+}
+.price > span {
+    color:hsl(213, 30%, 36%);
+    font-weight: 600;
+}
+.pricing > div:nth-child(2) {
+    flex: 1;
+}
+.pricing > div:nth-child(3){
+    flex: 1;
+    text-align: end;
+}
+.price {
+    padding-left: 12px;
+}
+.price p{
+    color: black !important;
+    font-weight: 800;
+}
+#change-link {
+    padding: 8px;
+    color: hsl(245, 75%, 52%);
+    font-weight: 800;
+    margin: 12px;
+}
+button {
+    width: 100%;
+    margin-top: 1.2rem;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 0 4px 20px -2px hsl(245, 48%, 55%);
+    cursor: pointer;
+}
+button:hover {
+    background-color: hsl(245, 55%, 55%);
+}
+.cancel-link {
+    margin-top: 1.8rem ;
+    text-align: center;
+    text-decoration: none;
+    color: hsl(228, 35%, 40%)
+}
+.cancel-link:hover {
+    color: blue
+}
+
+@media (min-width: 375px) {
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+@media (min-width: 1000px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg) !important;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
