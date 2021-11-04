@@ -6,3 +6,6 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 HTML5 Markup
 CSS flex box
 Mobile-first workflow
+
+## Screenshot
+![screenshot] <img src="images/order-summary.PNG" alt="" width="500" height="500">
